@@ -1,0 +1,67 @@
+body{
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+header h1 {
+    display: inline-block;
+}
+header div div input,header div div button{
+   margin-top: 1em;
+    margin-bottom: 0.5rem;
+}
+#sign{
+    float: right;
+}
+
+#demo{
+    height: 600px;
+}
+h2{ margin: 0;
+    padding: 1em;
+    height: 1em;
+    color: white;
+    background-color: #7986CB;}
+
+section{ padding: 0.5em;
+    background-color: lightblue;}
+
+section div div div img{
+    height: 600px;
+}
+section div div div div h1{
+    padding-bottom: 200px;
+}
+section h2{
+    color: white;
+    padding-bottom: 3rem;
+}
+
+table{
+    width: 100%;
+    padding: 0 10% 0 10%;
+    text-align: center;
+}
+td{
+    padding: 1rem;
+    width: 33.33333%;
+}
+body table tr td img{
+
+    width: 200px;
+    height: 150px;
+    margin: 1% 10% 0 20%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+footer p{
+    padding-left: 45%;
+}
+a img{
+    width: 100%;
+}

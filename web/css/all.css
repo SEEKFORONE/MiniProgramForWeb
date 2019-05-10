@@ -1,0 +1,67 @@
+body{
+    font-family: "Open Sans", Verdana, Arial, sans-serif;
+    font-size: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+header h1 {
+    display: inline-block;
+}
+header div div input,header div div button{
+    margin-top: 1em;
+    margin-bottom: 0.5rem;
+}
+#sign{
+    float: right;
+}
+#nav
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+#nav li
+{
+    float:right;
+}
+
+#nav ul li{
+    position: center;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 0.05rem;
+    margin: 0 45% 0 45%;
+}
+
+#nav li a:link,#nav li a:visited
+{
+    display:block;
+    width:120px;
+    font-weight:bold;
+    color: chartreuse;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+#nav li a:hover,#nav li a:active
+{
+    background-color: aqua;
+}
+#myself{
+    color: aqua;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-style: italic;
+    float: bottom;
+    bottom: 0;
+    position: absolute;
+    height:100px;
+}
+footer p{
+    padding-left: 45%;
+}
