@@ -1,0 +1,19 @@
+<!--pages/homework/homework.wxml-->
+<view class="nav_title">
+  <view class="nav_tab">
+  <view wx:for="{{list}}" class="{{selected==index?'hidden':'show'}}" data-index='{{index}}' bindtap="selected">{{item}}
+  <view class="{{selected==index?'nav_underline':''}}"></view>
+  </view>
+  </view>
+</view>
+
+<view class="container">
+  <label>老师：XXXXXX</label>
+  <label>我：XXXXXX</label>
+  <label>老师：XXXXXX</label>
+  <label>我：XXXXXX</label>
+</view>
+
+<view class='communicate'>
+  <input type='text' placeholder='输入你想要说的内容' confirm-type='发送'></input>
+</view>

@@ -1,0 +1,34 @@
+<!--pages/myinformation/myinformation.wxml-->
+<view class="container">
+  <view class="userinfo">
+  <navigator
+  url="../information/information"
+  hover-class="navigator-hover"
+  >
+    <block>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </navigator>
+  </view>
+
+  <view>
+  <navigator
+  url="../note/note"
+  hover-class="navigator-hover"
+  >
+  <button>
+  <label>我的笔记</label>
+  </button>
+  </navigator>
+  </view>
+
+</view>
+
+<view class="nav_title">
+  <view class="nav_tab">
+  <view wx:for="{{list}}" class="{{selected==index?'hidden':'show'}}" data-index='{{index}}' bindtap="selected">{{item}}
+  <view class="{{selected==index?'nav_underline':''}}"></view>
+  </view>
+  </view>
+</view>

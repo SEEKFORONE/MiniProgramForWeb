@@ -1,0 +1,30 @@
+<!--pages/information/information.wxml-->
+<view style="margin-top:20px">
+    <label>邮箱</label>
+    <input type='text' name='mail' value='11111111@fudan.edu.cn'></input>
+  </view>
+  <view style="margin-top:20px">
+    <label>性别</label>
+    <radio-group class="information" bindchange="radioChange">
+      <label class="information" wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}" />
+        {{item.value}}
+      </label>
+    </radio-group>
+  </view>
+  <view style="margin-top:20px">
+    <label>姓名</label>
+    <input type='text' name='name' value='小明'></input>
+  </view>
+  <view style="margin-top:20px">
+    <label>学号</label>
+    <input type='text' name='number' value='2222222'></input>
+  </view>
+  <view style="margin-top:20px">
+    <navigator
+    url="../index/index"
+    hover-class="navigator-hover"
+    >
+    <button>确认</button>
+    </navigator>
+  </view>

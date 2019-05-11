@@ -1,0 +1,33 @@
+<!--pages/course/course.wxml-->
+<view class="nav_title">
+  <view class="nav_tab">
+  <view wx:for="{{list}}" class="{{selected==index?'hidden':'show'}}" data-index='{{index}}' bindtap="selected">{{item}}
+  <view class="{{selected==index?'nav_underline':''}}"></view>
+  </view>
+  </view>
+</view>
+
+<view class="container">
+  <image src='..'></image>
+  <label>课程名称：数据结构</label>
+  <label>教师：XXX</label>
+  <label>课程简介：XXXXXXXXXXXXXXXXXXXXXXXXXXXX</label>
+  <label>开课时间：2019年5月1日</label>
+  <label>选课人数：100</label>
+  <view style="margin-top:20px">
+    <navigator
+    url=""
+    hover-class="navigator-hover"
+    >
+    <button>选课</button>
+    </navigator>
+  </view>
+  <view style="margin-top:20px">
+    <navigator
+    url=""
+    hover-class="navigator-hover"
+    >
+    <button>收藏</button>
+    </navigator>
+  </view>
+</view>

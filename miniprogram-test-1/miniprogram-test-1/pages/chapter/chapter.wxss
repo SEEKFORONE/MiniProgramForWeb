@@ -1,0 +1,34 @@
+/* pages/chapter/chapter.wxss */
+
+/*tab框切换*/
+.nav_tab{
+  position: fixed;
+  top:0px;
+  width:100%;
+  height:100rpx;
+  display:flex;
+  flex-direction:row;
+}
+.show{
+  line-height:100rpx;
+  text-align:center;
+  flex:1;
+  color:#333333;
+  font-size:28rpx;
+  opacity: 0.5;
+}
+.hidden{
+  line-height:100rpx;
+  text-align:center;
+  color:#ef9ba8;
+  flex:1;
+  font-size:28rpx;
+}
+.nav_underline{
+  background:#ef9ba8;
+  width:54rpx;
+  height:6rpx;
+  margin-top:-10rpx;
+  margin-left:70rpx;
+  border-radius:8rpx;
+}

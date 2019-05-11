@@ -1,0 +1,20 @@
+<!--pages/chapter/chapter.wxml-->
+<view class="nav_title">
+  <view class="nav_tab">
+  <view wx:for="{{list}}" class="{{selected==index?'hidden':'show'}}" data-index='{{index}}' bindtap="selected">{{item}}
+  <view class="{{selected==index?'nav_underline':''}}"></view>
+  </view>
+  </view>
+</view>
+
+<view class="container">
+  <label>第一章：XXXXXX</label>
+  <label>第一节：XXXXXX</label>
+  <label>第二节：XXXXXX</label>
+  <label>第三节：XXXXXX</label>
+  <label>第二章：XXXXXX</label>
+  <label>第一节：XXXXXX</label>
+  <label>第二节：XXXXXX</label>
+  <label>第三节：XXXXXX</label>
+</view>
+

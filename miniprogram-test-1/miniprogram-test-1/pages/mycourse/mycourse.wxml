@@ -1,0 +1,70 @@
+<!--pages/mycourse/mycourse.wxml-->
+<view class='search'>
+  <input type='text' placeholder='输入你想要的内容' confirm-type='search'></input>
+</view>
+
+<view class='container'>
+<text>已选课程</text>
+<view class="course">
+  <navigator
+  url="../course/course"
+  hover-class="navigator-hover"
+  >
+  <button>
+  <image src='...'></image>
+  <label>课程名：计算机网络</label>
+  <label>教师：XXX</label>
+  <label>简介：啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</label>
+  </button>
+  </navigator>
+</view>
+<view class="course">
+  <navigator
+  url="../course/course"
+  hover-class="navigator-hover"
+  >
+  <button>
+  <image src='...'></image>
+  <label>课程名：数据结构</label>
+  <label>教师：XXX</label>
+  <label>简介：啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</label>
+  </button>
+  </navigator>
+</view>
+
+<text>收藏课程</text>
+<view class="course">
+  <navigator
+  url="../contents/contents?content_id=network"
+  hover-class="navigator-hover"
+  >
+  <button>
+  <image src='...'></image>
+  <label>课程名：计算机网络</label>
+  <label>教师：XXX</label>
+  <label>简介：啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</label>
+  </button>
+  </navigator>
+</view>
+<view class="course">
+  <navigator
+  url="../contents/contents?content_id=network"
+  hover-class="navigator-hover"
+  >
+  <button>
+  <image src='...'></image>
+  <label>课程名：数据结构</label>
+  <label>教师：XXX</label>
+  <label>简介：啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</label>
+  </button>
+  </navigator>
+</view>
+</view>
+
+<view class="nav_title">
+  <view class="nav_tab">
+  <view wx:for="{{list}}" class="{{selected==index?'hidden':'show'}}" data-index='{{index}}' bindtap="selected">{{item}}
+  <view class="{{selected==index?'nav_underline':''}}"></view>
+  </view>
+  </view>
+</view>
